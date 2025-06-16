@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rohit Ushkoyal | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Rohit Ushkoyal</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="resume.pdf" download>Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2><span class="typing-text"></span></h2>
+    <p>Aspiring Full Stack Developer skilled in C, C++, Python, HTML, CSS, JavaScript, SQL, and DSA — combining strong logic with clean, interactive web design.</p>
+    <a href="#projects" class="btn">View Projects</a>
+  </section>
+
+  <section id="projects" class="projects">
+    <h3>My Projects</h3>
+    <div class="project-grid">
+
+      <div class="project-card">
+        <h4>Food Project</h4>
+        <p>A food delivery-style landing page built using HTML & CSS. Clean layout and responsive design.</p>
+        <a class="btn" href="https://rohit1856.github.io/food-project/" target="_blank">View Live</a>
+      </div>
+
+      <div class="project-card">
+        <h4>Calculator App</h4>
+        <p>Simple calculator made using HTML, CSS, and JS for performing basic arithmetic operations.</p>
+        <a class="btn" href="https://rohit1856.github.io/calculator-project/" target="_blank">View Live</a>
+      </div>
+
+      <div class="project-card">
+        <h4>Parcel Delivery Tracker</h4>
+        <p>This project simulates a real-world parcel dispatch system using C++ data structures:<br>
+          - Queue for managing parcels<br>
+          - Graph for mapping cities<br>
+          - Dijkstra’s Algorithm for shortest delivery path
+        </p>
+        <a class="btn" href="https://rohit1856.github.io/Parcel-delivery-tracker/" target="_blank">View Live</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="education" class="education">
+    <h3>Education</h3>
+    <p><strong>B.E. in Computer Science and Engineering</strong></p>
+    <p>Konkan Gyanpeeth College of Engineering, Mumbai University</p>
+    <p>2023 – 2027 | Currently in Third Year</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>Contact Me</h3>
+    <p><i class="fas fa-envelope"></i> rohit1856u@gmail.com</p>
+    <p><i class="fas fa-phone"></i> 9766309051</p>
+    <p><i class="fab fa-github"></i> <a href="https://github.com/Rohit1856" target="_blank">github.com/Rohit1856</a></p>
+  </section>
+
+  <footer>
+    <h4>© 2025 Rohit Ushkoyal. All rights reserved.</h4>
+  </footer>
+
+  <script>
+    const text = "Hi, I'm Rohit Ushkoyal";
+    let index = 0;
+    function type() {
+      document.querySelector('.typing-text').textContent = text.slice(0, index++);
+      if (index <= text.length) setTimeout(type, 100);
+    }
+    type();
+  </script>
+
+</body>
+</html>
