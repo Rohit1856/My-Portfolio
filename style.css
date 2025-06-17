@@ -176,3 +176,84 @@ footer {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  nav h1 {
+    font-size: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #222;
+  }
+
+  .hero {
+    padding: 60px 15px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .projects {
+    padding: 40px 15px;
+  }
+
+  .projects h3,
+  .education h3,
+  .contact h3 {
+    font-size: 24px;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .project-card p {
+    font-size: 14px;
+  }
+
+  .education,
+  .contact {
+    padding: 40px 15px;
+  }
+
+  .education p,
+  .contact p {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 15px;
+  }
+}
