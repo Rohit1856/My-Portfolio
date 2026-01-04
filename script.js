@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTabs();
   initContactForm();
   initBackToTop();
-  initPageLoader();
+ 
   initScrollAnimations();
   initGitHubStats();
 });
@@ -312,22 +312,7 @@ function initBackToTop() {
   });
 }
 
-// 10. Page Loader
-function initPageLoader() {
-  const pageLoader = document.getElementById('pageLoader');
-  
-  // Hide loader when everything is loaded
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      pageLoader.classList.add('fade-out');
-      
-      // Remove from DOM after animation
-      setTimeout(() => {
-        pageLoader.style.display = 'none';
-      }, 500);
-    }, 1000);
-  });
-}
+
 
 // 11. Scroll Animations
 function initScrollAnimations() {
@@ -485,4 +470,5 @@ document.addEventListener('keydown', (e) => {
 // Console greeting
 console.log('%c👋 Hello! Welcome to my portfolio!', 'color: #6366f1; font-size: 18px; font-weight: bold;');
 console.log('%c🚀 Built with modern web technologies', 'color: #06b6d4; font-size: 14px;');
+
 console.log('%c💡 Tips: Try keyboard shortcuts (press ?)', 'color: #10b981; font-size: 14px;');
