@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initTabs();
   initContactForm();
   initBackToTop();
- 
   initScrollAnimations();
   initGitHubStats();
 });
@@ -472,3 +471,4 @@ console.log('%c👋 Hello! Welcome to my portfolio!', 'color: #6366f1; font-size
 console.log('%c🚀 Built with modern web technologies', 'color: #06b6d4; font-size: 14px;');
 
 console.log('%c💡 Tips: Try keyboard shortcuts (press ?)', 'color: #10b981; font-size: 14px;');
+
