@@ -1,686 +1,226 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Rohit Ushkoyal - Full Stack Developer Portfolio">
-  <meta name="keywords" content="developer, portfolio, web development, full stack">
-  <title>Rohit Ushkoyal | Full Stack Developer</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Rohit Ushkoyal – Full Stack Developer portfolio with AI projects">
+  <title>Rohit Ushkoyal · full stack · AI</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
- 
-
-  <!-- Scroll Progress -->
-  <div class="scroll-progress" id="scrollProgress"></div>
-
-  <!-- Particle Background -->
-  <div class="particles" id="particles"></div>
-
-  <!-- Header -->
   <header>
-    <nav>
-      <div class="logo">
-        <span class="logo-icon">👨‍💻</span>
-        <span>Rohit Ushkoyal</span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <a href="resume.pdf" class="resume-btn" download>
-            <i class="fas fa-download"></i> Resume
-          </a>
-        </li>
-        <li>
-          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-            <i class="fas fa-moon"></i>
-          </button>
-        </li>
-      </ul>
-      
-      <!-- Mobile Menu Button -->
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-        <i class="fas fa-bars"></i>
-      </button>
-    </nav>
-    
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#home">Home</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-      <a href="resume.pdf" download>Resume</a>
-      <button class="theme-toggle mobile-theme" id="mobileThemeToggle">
-        <i class="fas fa-moon"></i> Theme
-      </button>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <div class="hero-badge floating">
-        <i class="fas fa-code"></i> Full Stack Developer
-      </div>
-      
-      <h1>
-        <span id="typed-text"></span>
-        <span class="cursor">|</span>
-      </h1>
-      
-      <p class="hero-description">
-        Passionate developer crafting digital experiences with clean code and modern design. 
-        Specializing in full-stack development with expertise in both frontend aesthetics and backend logic.
-      </p>
-      
-      <!-- GitHub Stats
-      <div class="github-stats">
-        <div class="stat-card">
-          <i class="fab fa-github"></i>
-          <div class="stat-number" id="repoCount">12</div>
-          <div class="stat-label">Public Repos</div>
-        </div>
-        <div class="stat-card">
-          <i class="fas fa-star"></i>
-          <div class="stat-number" id="starCount">28</div>
-          <div class="stat-label">GitHub Stars</div>
-        </div>
-        <div class="stat-card">
-          <i class="fas fa-code-branch"></i>
-          <div class="stat-number" id="commitCount">150+</div>
-          <div class="stat-label">Total Commits</div>
-        </div>
-        <div class="stat-card">
-          <i class="fas fa-fire"></i>
-          <div class="stat-number" id="contributions">40+</div>
-          <div class="stat-label">Contributions</div>
-        </div>
-      </div>
-       -->
-      <!-- Tech Stack -->
-      <div class="tech-stack">
-        <span class="tech-item">C/C++</span>
-        <span class="tech-item">Python</span>
-        <span class="tech-item">JavaScript</span>
-      
-        <span class="tech-item">SQL</span>
-        <span class="tech-item">DSA</span>
-        <span class="tech-item">HTML/CSS</span>
-      </div>
-      
-      <!-- CTA Buttons -->
-      <div class="hero-btns">
-        <a href="#projects" class="btn primary-btn">
-          <i class="fas fa-rocket"></i> View Projects
-        </a>
-        <a href="#contact" class="btn secondary-btn">
-          <i class="fas fa-envelope"></i> Get In Touch
-        </a>
-        <a href="https://github.com/Rohit1856" target="_blank" class="btn secondary-btn">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-      </div>
-      
-      <!-- Activity Status -->
-      <div class="activity-status">
-        <span class="status-dot active"></span>
-        <span class="activity-text">Currently working on: AI Code Assistant</span>
-      </div>
-    </div>
-    
-    <!-- Scroll Indicator -->
-    <div class="scroll-indicator">
-      <i class="fas fa-chevron-down"></i>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="section-header">
-      <h2 class="section-title">Featured Projects</h2>
-      <p class="section-subtitle">Showcasing my technical skills through practical implementations</p>
-    </div>
-    
-    <div class="project-grid">
-      <!-- Project 1 -->
-      <div class="project-card">
-        <div class="project-icon">
-          <i class="fas fa-utensils"></i>
-        </div>
-        <div class="project-tags">
-          <span class="project-tag">HTML/CSS</span>
-          <span class="project-tag">JavaScript</span>
-          <span class="project-tag">Responsive</span>
-        </div>
-        <h3 class="project-title">Food Delivery Platform</h3>
-        <p class="project-description">
-          A responsive food delivery landing page with modern UI/UX design. 
-          Built with semantic HTML5, CSS3 Flexbox/Grid, and interactive JavaScript elements.
-        </p>
-        <div class="project-links">
-          <a href="https://rohit1856.github.io/food-project/" target="_blank" class="btn primary-btn btn-sm">
-            <i class="fas fa-external-link-alt"></i> Live Demo
-          </a>
-          <a href="https://github.com/Rohit1856/food-project" target="_blank" class="btn secondary-btn btn-sm">
-            <i class="fab fa-github"></i> Code
-          </a>
-        </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="project-card">
-        <div class="project-icon">
-          <i class="fas fa-shipping-fast"></i>
-        </div>
-        <div class="project-tags">
-          <span class="project-tag">C++</span>
-          <span class="project-tag">DSA</span>
-          <span class="project-tag">Algorithms</span>
-        </div>
-        <h3 class="project-title">Parcel Delivery Tracker</h3>
-        <p class="project-description">
-          C++ application implementing Dijkstra's algorithm for optimal delivery routing. 
-          Features queue management, graph-based city mapping, and real-time tracking simulation.
-        </p>
-        <div class="project-links">
-          <a href="https://rohit1856.github.io/Parcel-delivery-tracker/" target="_blank" class="btn primary-btn btn-sm">
-            <i class="fas fa-external-link-alt"></i> View Project
-          </a>
-          <a href="https://github.com/Rohit1856/Parcel-delivery-tracker" target="_blank" class="btn secondary-btn btn-sm">
-            <i class="fab fa-github"></i> Code
-          </a>
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="project-card">
-        <div class="project-icon">
-          <i class="fas fa-robot"></i>
-        </div>
-        <div class="project-tags">
-          <span class="project-tag">Python</span>
-          <span class="project-tag">AI/ML</span>
-          <span class="project-tag">NLP</span>
-        </div>
-        <h3 class="project-title">AI Code Assistant</h3>
-        <p class="project-description">
-          Intelligent code review system using AI/ML models for automated error detection and suggestions. 
-          Implements static analysis and automated refactoring.
-        </p>
-        <div class="project-links">
-          <a href="#" class="btn primary-btn btn-sm">
-            <i class="fas fa-external-link-alt"></i> Case Study
-          </a>
-          <a href="#" class="btn secondary-btn btn-sm">
-            <i class="fab fa-github"></i> Repository
-          </a>
-        </div>
-      </div>
-
-      <!-- Project 4 -->
-      <div class="project-card">
-        <div class="project-icon">
-          <i class="fas fa-shopping-cart"></i>
-        </div>
-        <div class="project-tags">
-          <span class="project-tag">React</span>
-          <span class="project-tag">Node.js</span>
-          <span class="project-tag">MongoDB</span>
-        </div>
-        <h3 class="project-title">E-commerce Dashboard</h3>
-        <p class="project-description">
-          Full-stack e-commerce dashboard with real-time analytics, user management, 
-          and inventory tracking. Built with MERN stack.
-        </p>
-        <div class="project-links">
-          <a href="#" class="btn primary-btn btn-sm">
-            <i class="fas fa-external-link-alt"></i> Preview
-          </a>
-          <a href="#" class="btn secondary-btn btn-sm">
-            <i class="fab fa-github"></i> Source
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section
-  <section id="skills" class="skills">
-    <div class="section-header">
-      <h2 class="section-title">Technical Skills</h2>
-      <p class="section-subtitle">Proficiency levels across technologies and tools</p>
-    </div>
-    
-    <div class="skills-container">
-      <div class="skills-category">
-        <h3 class="skills-category-title">
-          <i class="fas fa-code"></i> Frontend Development
-        </h3>
-        <div class="skill-item">
-          <div class="skill-info">
-            <span class="skill-name">HTML/CSS</span>
-            <span class="skill-percent">95%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-level" data-level="95"></div>
-          </div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-info">
-            <span class="skill-name">JavaScript</span>
-            <span class="skill-percent">88%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-level" data-level="88"></div>
-          </div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-info">
-            <span class="skill-name">React</span>
-            <span class="skill-percent">75%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-level" data-level="75"></div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="skills-category">
-        <h3 class="skills-category-title">
-          <i class="fas fa-server"></i> Backend & Languages
-        </h3>
-        <div class="skill-item">
-          <div class="skill-info">
-            <span class="skill-name">Python</span>
-            <span class="skill-percent">85%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-level" data-level="85"></div>
-          </div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-info">
-            <span class="skill-name">C/C++</span>
-            <span class="skill-percent">92%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-level" data-level="92"></div>
-          </div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-info">
-            <span class="skill-name">Node.js</span>
-            <span class="skill-percent">78%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-level" data-level="78"></div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="skills-category">
-        <h3 class="skills-category-title">
-          <i class="fas fa-database"></i> Database & Tools
-        </h3>
-        <div class="skill-item">
-          <div class="skill-info">
-            <span class="skill-name">SQL</span>
-            <span class="skill-percent">87%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-level" data-level="87"></div>
-          </div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-info">
-            <span class="skill-name">Git/GitHub</span>
-            <span class="skill-percent">90%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-level" data-level="90"></div>
-          </div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-info">
-            <span class="skill-name">DSA</span>
-            <span class="skill-percent">85%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-level" data-level="85"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- Experience Section -->
-  <section id="experience" class="experience">
-    <div class="section-header">
-      <h2 class="section-title">Experience & Internships</h2>
-      <p class="section-subtitle">Professional journey and real-world projects</p>
-    </div>
-    
-    <div class="experience-tabs">
-
-      <button class="tab-btn" data-tab="projects">Projects</button>
-    </div>
-    
-    <!-- <div class="tab-content active" id="project">
-      <div class="experience-card">
-        <div class="exp-header">
-          <h3 class="exp-title">Web Development Intern</h3>
-          <span class="exp-date">Jun 2024 - Aug 2024</span>
-        </div>
-        <div class="exp-company">Tech Solutions Inc.</div>
-        <ul class="exp-details">
-        
-          <li>Improved website performance by 40% through code optimization</li>
-          <li>Collaborated with UX team to implement modern design systems</li>
-          <li>Implemented REST APIs for data management</li>
-        </ul>
-        <div class="exp-tech">
-          <span>MongoDB</span>
-          <span>Figma</span>
-          <span>Git</span>
-        </div>
-      </div>
-    </div> -->
-    
-    <!-- <div class="tab-content" id="freelance">
-      <div class="experience-card">
-        <div class="exp-header">
-          <h3 class="exp-title">Freelance Web Developer</h3>
-          <span class="exp-date">Jan 2024 - Present</span>
-        </div>
-        <div class="exp-company">Self-Employed</div>
-        <ul class="exp-details">
-          <li>Built custom websites for small businesses and startups</li>
-          <li>Created portfolio websites with modern, responsive designs</li>
-          <li>Provided ongoing maintenance and technical support</li>
-          <li>Optimized websites for SEO and performance</li>
-        </ul>
-        <div class="exp-tech">
-          <span>HTML/CSS</span>
-          <span>JavaScript</span>
-          <span>WordPress</span>
-          <span>SEO</span>
-        </div>
-      </div>
-    </div> -->
-    
-    <div class="tab-content" id="projects">
-        <div class="experience-card">
-        <div class="exp-header">
-          <h3 class="exp-title">Web Development Intern</h3>
-          <span class="exp-date">Jun 2024 - Aug 2024</span>
-        </div>
-        <div class="exp-company">Tech Solutions Inc.</div>
-        <ul class="exp-details">
-        
-          <li>Improved website performance by 40% through code optimization</li>
-          <li>Collaborated with UX team to implement modern design systems</li>
-          <li>Implemented REST APIs for data management</li>
-        </ul>
-        <div class="exp-tech">
-          <span>MongoDB</span>
-          <span>Figma</span>
-          <span>Git</span>
-        </div>
-      </div>
-         <div class="experience-card">
-        <div class="exp-header">
-          <h3 class="exp-title">Freelance Web Developer</h3>
-          <span class="exp-date">Jan 2024 - Present</span>
-        </div>
-        <div class="exp-company">Self-Employed</div>
-        <ul class="exp-details">
-          <li>Built custom websites for small businesses and startups</li>
-          <li>Created portfolio websites with modern, responsive designs</li>
-          <li>Provided ongoing maintenance and technical support</li>
-          <li>Optimized websites for SEO and performance</li>
-        </ul>
-        <div class="exp-tech">
-          <span>HTML/CSS</span>
-          <span>JavaScript</span>
-          <span>WordPress</span>
-          <span>SEO</span>
-        </div>
-      </div>
-      <div class="experience-card">
-        <div class="exp-header">
-          <h3 class="exp-title">Open Source Contributor</h3>
-          <span class="exp-date">Ongoing</span>
-        </div>
-        <div class="exp-company">GitHub Community</div>
-        <ul class="exp-details">
-          <li>Contributed to various open-source projects</li>
-          <li>Fixed bugs and implemented new features</li>
-          <li>Participated in code reviews</li>
-          <li>Documented projects and wrote tutorials</li>
-        </ul>
-        <div class="exp-tech">
-          <span>Open Source</span>
-          <span>Git</span>
-          <span>Documentation</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education Section -->
-  <section id="education" class="education">
-    <div class="section-header">
-      <h2 class="section-title">Education</h2>
-      <p class="section-subtitle">Academic background and continuous learning</p>
-    </div>
-    
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-icon">
-          <i class="fas fa-graduation-cap"></i>
-        </div>
-        <div class="timeline-content">
-          <span class="timeline-date">2023 - 2027 (Expected)</span>
-          <h3 class="timeline-title">B.E. Computer Science & Engineering</h3>
-          <p class="timeline-subtitle">Konkan Gyanpeeth College of Engineering, Mumbai University</p>
-          <ul class="timeline-details">
-            <li>Current CGPA: 7/10</li>
-            <li><strong>Focus Areas:</strong> Data Structures, Algorithms, Web Development, Database Systems</li>
-            <li><strong>Current Status:</strong> Third Year Student</li>
-            <li><strong>Relevant Coursework:</strong> OOP, Computer Networks, Software Engineering, AI/ML</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="timeline-item">
-        <div class="timeline-icon">
-          <i class="fas fa-laptop-code"></i>
-        </div>
-        <div class="timeline-content">
-          <span class="timeline-date">2022 - Present</span>
-          <h3 class="timeline-title">Self-Directed Learning & Certifications</h3>
-          <p class="timeline-subtitle">Online Platforms & Continuous Education</p>
-          <ul class="timeline-details">
-            <li><strong>Platforms:</strong> LeetCode, CodeChef, Udemy, Coursera, FreeCodeCamp</li>
-            <li><strong>Certifications:</strong> Web Development, Data Structures, Python Programming</li>
-            <li><strong>Achievements:</strong> LeetCode Weekly Contest Top 10%, CodeChef 3-star rating</li>
-            <li><strong>Online Courses:</strong> 15+ completed courses on various technologies</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="section-header">
-      <h2 class="section-title">Get In Touch</h2>
-      <p class="section-subtitle">Have a project in mind? Let's work together!</p>
-    </div>
-    
-    <div class="contact-container">
-      <div class="contact-form-wrapper">
-        <form id="contactForm" class="contact-form">
-          <div class="form-group">
-            <label for="name">Name *</label>
-            <input type="text" id="name" name="name" required placeholder="Your name">
-            <div class="error-message" id="nameError"></div>
-          </div>
-          
-          <div class="form-group">
-            <label for="email">Email *</label>
-            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
-            <div class="error-message" id="emailError"></div>
-          </div>
-          
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Project inquiry">
-          </div>
-          
-          <div class="form-group">
-            <label for="message">Message *</label>
-            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
-            <div class="error-message" id="messageError"></div>
-          </div>
-          
-          <button type="submit" class="btn primary-btn">
-            <i class="fas fa-paper-plane"></i> Send Message
-          </button>
-          
-          <div id="formSuccess" class="success-message">
-            <i class="fas fa-check-circle"></i>
-            Message sent successfully! I'll get back to you within 24 hours.
-          </div>
-        </form>
-      </div>
-      
-      <div class="contact-info-wrapper">
-        <div class="contact-info">
-          <h3 class="contact-info-title">Contact Information</h3>
-          
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div class="contact-details">
-              <h4>Email</h4>
-              <a href="mailto:rohit1856u@gmail.com">rohit1856u@gmail.com</a>
-            </div>
-          </div>
-          
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-phone"></i>
-            </div>
-            <div class="contact-details">
-              <h4>Phone</h4>
-              <a href="tel:+919766309051">+91 9766309051</a>
-            </div>
-          </div>
-          
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="contact-details">
-              <h4>Location</h4>
-              <p>Mumbai, India</p>
-            </div>
-          </div>
-          
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-clock"></i>
-            </div>
-            <div class="contact-details">
-              <h4>Availability</h4>
-              <p>Open to opportunities & collaborations</p>
-            </div>
-          </div>
-          
-          <div class="social-links">
-            <a href="https://github.com/Rohit1856" target="_blank" class="social-link" title="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="www.linkedin.com/in/rohit-ushkoyal-456122356" target="_blank" class="social-link" title="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://twitter.com/rohitushkoyal" target="_blank" class="social-link" title="Twitter">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://leetcode.com/u/rohit1856/" target="_blank" class="social-link" title="LeetCode">
-              <i class="fas fa-code"></i>
-            </a>
-            <a href="https://www.instagram.com/rohit.ushkoyal/" target="_blank" class="social-link" title="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <div class="footer-logo">
-        <span class="logo-icon">👨‍💻</span>
-        <span>Rohit Ushkoyal</span>
-      </div>
-      
-      <div class="footer-links">
-        <a href="#home">Home</a>
+    <nav class="container">
+      <div class="logo"><i class="fas fa-crown"></i> Rohit Ushkoyal</div>
+      <div class="nav-links">
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
+        <a href="#certificates">Certificates</a>
         <a href="#contact">Contact</a>
+        <a href="resume.pdf" class="resume-btn" download><i class="fas fa-download"></i> Resume</a>
       </div>
-      
-      <div class="footer-social">
-        <a href="https://github.com/Rohit1856" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://linkedin.com/in/rohitushkoyal" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:rohit1856u@gmail.com">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </div>
-      
-      <div class="footer-copyright">
-        <p>© 2025 Rohit Ushkoyal. All rights reserved.</p>
-     
-      </div>
-    </div>
-  </footer>
+      <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+    </nav>
+    <div class="mobile-menu container" id="mobileMenu"></div>
+  </header>
 
-  <!-- Back to Top Button -->
-  <button class="back-to-top" id="backToTop" aria-label="Back to top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
+  <main>
+    <!-- HERO (updated with your profile) -->
+    <section class="hero container">
+      <div class="hero-grid">
+        <div>
+          <span class="hero-badge"><i class="fas fa-robot"></i> AI · full‑stack · CSE 2027</span>
+          <h1>Rohit <span class="hero-highlight">Ushkoyal</span><br>building with AI & code</h1>
+          <p class="hero-description">Third‑year CSE student passionate about AI‑powered developer tools, full‑stack apps, and clean architecture.</p>
+          <div class="btn-group">
+            <a href="#projects" class="btn btn-primary"><i class="fas fa-arrow-down"></i> see projects</a>
+            <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> hire me</a>
+          </div>
+          <div class="availability"><span class="dot"></span> open for intern / freelance · AWS AI certified</div>
+        </div>
+        <div class="profile-card">
+          <div style="display:flex; gap:1rem; align-items:center; margin-bottom:0.5rem;">
+            <i class="fas fa-user-astronaut" style="font-size:2.8rem; color:var(--primary);"></i>
+            <div><strong style="font-size:1.3rem;">Rohit Ushkoyal</strong><br><span style="color:var(--gray-500);">B.E. CSE · 2023–2027</span></div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-item"><span class="stat-number">4+</span> <div>projects</div></div>
+            <div class="stat-item"><span class="stat-number">200+</span> <div>Commits</div></div>
+            <div class="stat-item"><span class="stat-number">AWS</span> <div>GenAI</div></div>
+          </div>
+          <div class="tech-strip">
+            <span class="tech-tag">Python</span><span class="tech-tag">C++</span><span class="tech-tag">JavaScript</span><span class="tech-tag">React</span><span class="tech-tag">Node.js</span><span class="tech-tag">MongoDB</span><span class="tech-tag">AI/ML</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- JavaScript -->
-  <script src="script.js"></script>
+    <!-- PROJECTS (exactly from resume) -->
+    <section id="projects" class="container">
+      <div class="section-header">
+        <h2 class="section-title"><i class="fas fa-microchip"></i> projects</h2>
+      </div>
+      <div class="project-grid">
+        <!-- AI Auto Code Fixer -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-brain"></i></div>
+          <div class="project-tags"><span class="project-tag">VS Code extension</span><span class="project-tag">AI</span><span class="project-tag">REST API</span></div>
+          <h3 class="project-title">AI Auto Code Fixer & Reviewer</h3>
+          <div class="project-sub">Sep 2025 – Oct 2025 · <i class="fas fa-external-link-alt"></i> <a href="https://drive.google.com/drive/folders/14DZKZBgBDJg85AY7sXStaR4VXSDql3ac?usp=drive_link" style="color:var(--primary);">Drive link</a></div>
+          <p class="project-description">VS Code extension that uses AI to review code and suggest fixes in real‑time. Integrated REST APIs with AI model, reduced debugging time. Built with VS Code API, inline suggestions, quick‑fix options.</p>
+          <div class="project-links">
+            <a href="#"><i class="fab fa-github"></i> code (private)</a>
+            <a href="#"><i class="fas fa-video"></i> demo</a>
+          </div>
+        </div>
+        <!-- Personal Portfolio Website -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-globe"></i></div>
+          <div class="project-tags"><span class="project-tag">HTML/CSS</span><span class="project-tag">JS</span><span class="project-tag">GitHub Pages</span></div>
+          <h3 class="project-title">Personal Portfolio Website</h3>
+          <div class="project-sub">Nov 2024 – Dec 2024 · <a href="https://rohit1856.github.io/My-Portfolio/" style="color:var(--primary);">link</a></div>
+          <p class="project-description">Fully responsive portfolio with modern UI/UX, animations, mobile‑first. Optimized performance → high Lighthouse scores. Hosted on GitHub Pages (custom domain).</p>
+          <div class="project-links">
+            <a href="#"><i class="fab fa-github"></i> source</a>
+            <a href="https://rohit1856.github.io/My-Portfolio/"><i class="fas fa-external-link-alt"></i> live</a>
+          </div>
+        </div>
+        <!-- Food Ordering Website -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-pizza-slice"></i></div>
+          <div class="project-tags"><span class="project-tag">MERN</span><span class="project-tag">JWT</span><span class="project-tag">REST</span></div>
+          <h3 class="project-title">Food Ordering Website</h3>
+          <div class="project-sub">Apr 2024 – May 2024 · <a href="https://rohit1856.github.io/food-project/" style="color:var(--primary);">link</a></div>
+          <p class="project-description">Full‑stack platform: auth, menu, cart, order tracking. REST APIs with Node.js/Express, MongoDB, JWT. Responsive frontend with dynamic rendering.</p>
+          <div class="project-links">
+            <a href="https://rohit1856.github.io/food-project/"><i class="fab fa-github"></i> frontend</a>
+            <a href="#"><i class="fab fa-github"></i> backend</a>
+          </div>
+        </div>
+        <!-- (original food project from earlier, but we keep your resume ones) optionally we can add the parcel tracker if you want, but your resume shows 3 main ones -->
+      </div>
+      <!-- small note: additional project from resume: food ordering already there, portfolio there, AI extension. Perfect -->
+    </section>
+
+    <!-- SKILLS (full skill summary from resume) -->
+    <section id="skills" class="container">
+      <div class="section-header">
+        <h2 class="section-title"><i class="fas fa-cogs"></i> skill summary</h2>
+      </div>
+      <div class="skills-container">
+        <div class="skill-group">
+          <h3>💻 languages</h3>
+          <div class="skill-items">
+            <div class="skill-row"><span class="skill-badge">Python</span><span class="skill-badge">C</span><span class="skill-badge">C++</span><span class="skill-badge">Java</span><span class="skill-badge">PHP</span></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>🌐 web & backend</h3>
+          <div class="skill-items">
+            <div class="skill-row"><span class="skill-badge">HTML/CSS</span><span class="skill-badge">JavaScript</span><span class="skill-badge">React</span><span class="skill-badge">Node.js</span><span class="skill-badge">Express.js</span></div>
+            <div class="skill-row"><span class="skill-badge">REST APIs</span><span class="skill-badge">JSON</span><span class="skill-badge">WordPress</span></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>🗄️ database & tools</h3>
+          <div class="skill-items">
+            <div class="skill-row"><span class="skill-badge">MySQL</span><span class="skill-badge">MongoDB</span><span class="skill-badge">Git/GitHub</span><span class="skill-badge">VS Code</span></div>
+            <div class="skill-row"><span class="skill-badge">DSA</span><span class="skill-badge">OOP</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES (AWS Generative AI) -->
+    <section id="certificates" class="container">
+      <div class="section-header">
+        <h2 class="section-title"><i class="fas fa-certificate"></i> certificate</h2>
+      </div>
+      <div class="cert-card">
+        <i class="fab fa-aws" style="font-size:2.5rem; color:var(--primary);"></i>
+        <div>
+          <h3 style="margin-bottom:0.2rem;">AWS Academy Graduate - Generative AI Foundations</h3>
+          <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+            <span class="cert-badge">credential</span>
+            <a href="https://drive.google.com/file/d/14F0YUVCCy99rTAD6uuZsGNkRg75keVXu/view?usp=sharing" class="cert-link" target="https://drive.google.com/file/d/14F0YUVCCy99rTAD6uuZsGNkRg75keVXu/view?usp=sharing">🔗 certificate URL</a>
+            <a href="https://www.credly.com/badges/99f63cad-f71a-458c-900f-0b040fdf12be" class="cert-link" >🏅 badge</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- mini experience / projects as internships (from resume: you have projects, but we can list them as dev experience) -->
+    <section id="experience" class="container">
+      <div class="section-header">
+        <h2 class="section-title"><i class="fas fa-briefcase"></i> dev journey</h2>
+      </div>
+      <div class="exp-card">
+        <div class="exp-header"><span class="exp-title">AI Auto Code Fixer (VS Code extension)</span><span class="exp-date">Sep 2025</span></div>
+        <div class="exp-company">personal AI project</div>
+        <ul class="exp-desc">
+          <li>• built extension integrating AI model for real‑time code review</li>
+          <li>• reduced debugging time with inline suggestions & quick fixes</li>
+        </ul>
+      </div>
+      <div class="exp-card">
+        <div class="exp-header"><span class="exp-title">Full‑stack food ordering platform</span><span class="exp-date">Apr 2024</span></div>
+        <div class="exp-company">MERN stack</div>
+        <ul class="exp-desc">
+          <li>• JWT auth, REST APIs, MongoDB, cart & order tracking</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="container">
+      <div class="section-header">
+        <h2 class="section-title"><i class="fas fa-graduation-cap"></i> education</h2>
+      </div>
+      <div class="edu-card">
+        <h3>Konkan Gyanpeeth College of Engineering (Mumbai University)</h3>
+        <p style="color:var(--primary); font-weight:600;">Bachelor of Engineering – Computer Science & Engineering</p>
+        <p>Aug 2023 – June 2027 · Karjat, India</p>
+        <p style="margin-top:0.8rem;">Coursework: DSA, OOP, DBMS, OS, AI/ML · CGPA 7.0/10</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container">
+      <div class="section-header">
+        <h2 class="section-title"><i class="fas fa-envelope"></i> contact</h2>
+      </div>
+      <div class="contact-row">
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group"><input type="text" placeholder="name" id="name" required></div>
+            <div class="form-group"><input type="email" placeholder="email" id="email" required></div>
+            <div class="form-group"><input type="text" placeholder="subject" id="subject"></div>
+            <div class="form-group"><textarea rows="4" placeholder="message" id="message" required></textarea></div>
+            <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> send</button>
+          </form>
+          <div id="formSuccess" style="color:#10b981; margin-top:0.5rem;"></div>
+        </div>
+        <div class="contact-details">
+          <p><i class="fas fa-envelope"></i> rohit1856u@gmail.com</p>
+          <p><i class="fas fa-phone-alt"></i> +91 97663 09051</p>
+          <p><i class="fas fa-map-pin"></i> Mumbai, India</p>
+          <div class="social-links">
+            <a href="https://github.com/Rohit1856" ><i class="fab fa-github"></i></a>
+            <a href="http://www.linkedin.com/in/rohit-ushkoyal-456122356" ><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://leetcode.com/u/rohitushkoyal/" ><i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container">
+      <span>© 2025 Rohit Ushkoyal · full‑stack & AI</span>
+      <span>built from your resume</span>
+    </footer>
+  </main>
+
+  <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+ <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
