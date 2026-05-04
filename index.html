@@ -3,162 +3,405 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Rohit Ushkoyal – Full Stack Developer & AI Builder Portfolio">
-  <meta name="author" content="Rohit Ushkoyal">
+  <meta name="description" content="Rohit Ushkoyal – Full Stack Developer & AI Builder · Portfolio">
   <title>Rohit Ushkoyal · Dev & AI Builder</title>
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
-</head>
 
+</head>
 <body>
 
-<!-- HEADER -->
-<header>
-  <nav class="container">
-    <a href="#" class="logo">Rohit Ushkoyal <span class="logo-dot"></span></a>
-
-    <div class="nav-links" id="navLinks">
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#certificates">Certificates</a>
-      <a href="#contact">Contact</a>
-      <a href="resume.pdf" class="resume-btn" download>
-        <i class="fas fa-download"></i> Resume
+  <!-- HEADER -->
+  <header>
+    <nav class="container">
+      <a href="#" class="logo">
+        Rohit Ushkoyal <span class="logo-dot"></span>
       </a>
-    </div>
-
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
-      <i class="fas fa-bars"></i>
-    </button>
-  </nav>
-</header>
-
-<main>
-
-<!-- HERO -->
-<section class="hero container">
-  <div class="hero-grid">
-
-    <div class="fade-in">
-      <div class="hero-eyebrow">
-        <span class="hero-eyebrow-dot"></span>
-        CSE · Full Stack · AI Builder
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.pdf" class="resume-btn" download><i class="fas fa-download"></i> Resume</a>
       </div>
+      <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+    </nav>
+    <div class="mobile-menu container" id="mobileMenu"></div>
+  </header>
 
-      <h1>Building with <br><em>Code.</em></h1>
+  <main>
 
-      <p class="hero-description">
-        Third-year Computer Science student crafting smart developer tools and full-stack apps — where clean architecture meets AI.
-      </p>
-
-      <div class="btn-group">
-        <a href="#projects" class="btn btn-primary">
-          <i class="fas fa-arrow-down"></i> View Projects
-        </a>
-        <a href="#contact" class="btn btn-outline">
-          <i class="fas fa-paper-plane"></i> Hire Me
-        </a>
-      </div>
-
-      <div class="availability">
-        <span class="avail-dot"></span>
-        Open for internship & freelance · AWS AI Certified
-      </div>
-    </div>
-
-    <!-- PROFILE CARD -->
-    <div class="profile-card fade-in">
-      <div class="profile-avatar">🧑‍💻</div>
-      <div class="profile-name">Rohit Ushkoyal</div>
-      <div class="profile-sub">B.E. CSE · Mumbai University · 2023–2027</div>
-
-      <div class="stat-row">
-        <div class="stat-item">
-          <span class="stat-number">4+</span>
-          <div class="stat-label">Projects</div>
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-grid">
+        <div class="fade-in">
+          <div class="hero-eyebrow">
+            <span class="hero-eyebrow-dot"></span>
+            CSE · Full Stack · AI Builder
+          </div>
+          <h1>Building with<br><em>Code.</em></h1>
+          <p class="hero-description">Third-year Computer Science student crafting smarter developer tools and full-stack applications — where clean architecture meets AI integration.</p>
+          <div class="btn-group">
+            <a href="#projects" class="btn btn-primary"><i class="fas fa-arrow-down"></i> View Projects</a>
+            <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Hire Me</a>
+          </div>
+          <div class="availability">
+            <span class="avail-dot"></span>
+            Open for internship & freelance · AWS AI Certified
+          </div>
         </div>
-        <div class="stat-item">
-          <span class="stat-number">200+</span>
-          <div class="stat-label">Commits</div>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number">AWS</span>
-          <div class="stat-label">GenAI</div>
+
+        <div class="profile-card fade-in" style="transition-delay:0.15s">
+          <div class="profile-avatar">🧑‍💻</div>
+          <div class="profile-name">Rohit Ushkoyal</div>
+          <div class="profile-sub">B.E. CSE · Mumbai University · 2023–2027</div>
+          <div class="stat-row">
+            <div class="stat-item">
+              <span class="stat-number">4+</span>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">200+</span>
+              <div class="stat-label">Commits</div>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">AWS</span>
+              <div class="stat-label">GenAI</div>
+            </div>
+          </div>
+          <div class="tech-strip">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">AI/ML</span>
+             <span class="tech-tag">C</span>
+            <span class="tech-tag">C++</span>
+            <span class="tech-tag">JAVA</span>
+            <span class="tech-tag">FAST API</span>
+        
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="tech-strip">
-        <span class="tech-tag">Python</span>
-        <span class="tech-tag">JavaScript</span>
-        <span class="tech-tag">React</span>
-        <span class="tech-tag">Node.js</span>
-        <span class="tech-tag">MongoDB</span>
-        <span class="tech-tag">AI/ML</span>
-        <span class="tech-tag">C</span>
-        <span class="tech-tag">C++</span>
-        <span class="tech-tag">Java</span>
-        <span class="tech-tag">FastAPI</span>
+    <!-- PROJECTS -->
+    <section id="projects" class="section-wrap container">
+      <div class="fade-in">
+        <div class="section-eyebrow">Selected Work</div>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="project-grid">
+
+        <!-- Featured -->
+        <div class="project-card featured fade-in">
+          <div class="project-number">01</div>
+          <div class="project-tags">
+            <span class="project-tag">Vercel</span>
+            <span class="project-tag">AI</span>
+            <span class="project-tag">REST API</span>
+            <span class="project-tag">Featured</span>
+          </div>
+          <h3 class="project-title">AI-Powered Resume Analyzer & Builder System</h3>
+          <div class="project-date">Feb 2026 – Mar 2026</div>
+          <p class="project-description">Processes resume files, analyzes ATS compatibility, and uses AI to generate improvements. Provides an interactive interface to upload resumes, view scores, build resumes, and download the final PDF.</p>
+          <div class="project-links">
+            <a href="https://ai-resume-frontend-afe7.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="#"><i class="fab fa-github"></i> Code (Private)</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in" style="transition-delay:0.1s">
+          <div class="project-number">02</div>
+          <div class="project-tags">
+            <span class="project-tag">VS Code Ext.</span>
+            <span class="project-tag">AI</span>
+            <span class="project-tag">REST API</span>
+          </div>
+          <h3 class="project-title">AI Auto Code Fixer & Reviewer</h3>
+          <div class="project-date">Sep 2025 – Oct 2025</div>
+          <p class="project-description">VS Code extension using AI to review code and suggest fixes in real-time. Reduced debugging time with inline suggestions, quick-fix options, and VS Code API integration.</p>
+          <div class="project-links">
+            <a href="https://drive.google.com/drive/folders/14DZKZBgBDJg85AY7sXStaR4VXSDql3ac?usp=drive_link" target="_blank"><i class="fab fa-google-drive"></i> Drive Link</a>
+            <a href="#"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in" style="transition-delay:0.15s">
+          <div class="project-number">03</div>
+          <div class="project-tags">
+            <span class="project-tag">MERN</span>
+            <span class="project-tag">JWT</span>
+            <span class="project-tag">REST</span>
+          </div>
+          <h3 class="project-title">Food Ordering Website</h3>
+          <div class="project-date">Apr 2024 – May 2024</div>
+          <p class="project-description">Full-stack platform with user auth, menu browsing, cart management, and order tracking. Node.js/Express REST APIs, MongoDB, JWT security, and responsive frontend.</p>
+          <div class="project-links">
+            <a href="https://rohit1856.github.io/food-project/" target="_blank"><i class="fas fa-external-link-alt"></i> Frontend</a>
+            <a href="#"><i class="fab fa-github"></i> Backend</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in" style="transition-delay:0.2s">
+          <div class="project-number">04</div>
+          <div class="project-tags">
+            <span class="project-tag">HTML/CSS</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">GitHub Pages</span>
+          </div>
+          <h3 class="project-title">Personal Portfolio Website</h3>
+          <div class="project-date">Nov 2024 – Dec 2024</div>
+          <p class="project-description">Fully responsive portfolio with modern UI/UX, animations, mobile-first design. Optimized performance with high Lighthouse scores. Deployed on GitHub Pages.</p>
+          <div class="project-links">
+            <a href="https://rohit1856.github.io/My-Portfolio/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+            <a href="#"><i class="fab fa-github"></i> Source</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in" style="transition-delay:0.25s">
+          <div class="project-number">05</div>
+          <div class="project-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">HTML/CSS</span>
+            <span class="project-tag">Logistics</span>
+          </div>
+          <h3 class="project-title">ParcelFlow — Delivery Tracker</h3>
+          <div class="project-date">Mar 2025 – Apr 2025</div>
+          <p class="project-description">Logistics web platform for parcel tracking, FIFO dispatch, and route optimization. Built with vanilla JavaScript, focused on efficient delivery management flows.</p>
+          <div class="project-links">
+            <a href="https://rohit1856.github.io/Parcel-delivery-tracker/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+            <a href="https://github.com/Rohit1856/Parcel-delivery-tracker" target="_blank"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section-wrap container">
+      <div class="fade-in">
+        <div class="section-eyebrow">Expertise</div>
+        <h2 class="section-title">Skill Summary</h2>
+      </div>
+      <div class="skills-layout">
+        <div class="skill-group fade-in">
+          <div class="skill-group-title">Languages</div>
+          <div class="skill-group-sub">Core programming</div>
+          <div class="skill-tags">
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">C</span>
+            <span class="skill-badge">C++</span>
+            <span class="skill-badge">Java</span>
+            <span class="skill-badge">PHP</span>
+          </div>
+        </div>
+        <div class="skill-group fade-in" style="transition-delay:0.1s">
+          <div class="skill-group-title">Web & Backend</div>
+          <div class="skill-group-sub">Full stack</div>
+          <div class="skill-tags">
+            <span class="skill-badge">HTML/CSS</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">React</span>
+            <span class="skill-badge">Node.js</span>
+            <span class="skill-badge">Express.js</span>
+            <span class="skill-badge">REST APIs</span>
+            <span class="skill-badge">WordPress</span>
+          </div>
+        </div>
+        <div class="skill-group fade-in" style="transition-delay:0.2s">
+          <div class="skill-group-title">Database & Tools</div>
+          <div class="skill-group-sub">Infrastructure</div>
+          <div class="skill-tags">
+            <span class="skill-badge">MySQL</span>
+            <span class="skill-badge">MongoDB</span>
+            <span class="skill-badge">Git/GitHub</span>
+            <span class="skill-badge">VS Code</span>
+            <span class="skill-badge">DSA</span>
+            <span class="skill-badge">OOP</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="section-wrap container">
+      <div class="fade-in">
+        <div class="section-eyebrow">Credentials</div>
+        <h2 class="section-title">Certificates</h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card fade-in">
+          <div class="cert-icon"><i class="fab fa-aws"></i></div>
+          <div>
+            <span class="cert-badge-tag">AWS Academy</span>
+            <div class="cert-title" style="margin-top:0.5rem;">Generative AI Foundations</div>
+            <div style="font-size:0.82rem; color:var(--forest); opacity:0.5; margin-top:0.2rem; font-weight:300;">Amazon Web Services · 2024</div>
+            <div class="cert-links">
+              <a href="https://drive.google.com/file/d/14F0YUVCCy99rTAD6uuZsGNkRg75keVXu/view?usp=sharing" target="_blank" class="cert-link">
+                <i class="fas fa-link"></i> Certificate
+              </a>
+              <a href="https://www.credly.com/badges/99f63cad-f71a-458c-900f-0b040fdf12be" target="_blank" class="cert-link">
+                <i class="fas fa-medal"></i> Credly Badge
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card fade-in" style="transition-delay:0.1s">
+          <div class="cert-icon"><i class="fab fa-aws"></i></div>
+          <div>
+            <span class="cert-badge-tag">AWS Academy</span>
+            <div class="cert-title" style="margin-top:0.5rem;">Machine Learning Foundations</div>
+            <div style="font-size:0.82rem; color:var(--forest); opacity:0.5; margin-top:0.2rem; font-weight:300;">Amazon Web Services · 2024</div>
+            <div class="cert-links">
+              <a href="https://drive.google.com/file/d/1ASLU6Hd3-GpF7lFrzBUSwEoub6uBVrk8/view?usp=sharing" target="_blank" class="cert-link">
+                <i class="fas fa-link"></i> Certificate
+              </a>
+              <a href="https://www.credly.com/go/NOfq9xLW" target="_blank" class="cert-link">
+                <i class="fas fa-medal"></i> Credly Badge
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / DEV JOURNEY -->
+    <section id="experience" class="section-wrap container">
+      <div class="fade-in">
+        <div class="section-eyebrow">Timeline</div>
+        <h2 class="section-title">Dev Journey</h2>
+      </div>
+      <div class="exp-timeline fade-in">
+        <div class="exp-item">
+          <div class="exp-meta">
+            <div class="exp-title">AI Resume Analyzer & Builder</div>
+            <div class="exp-date">Feb 2026</div>
+          </div>
+          <div class="exp-role">AI · Full Stack · Vercel</div>
+          <ul class="exp-list">
+            <li>Built AI-driven ATS analyzer processing resume files and generating improvement suggestions</li>
+            <li>Deployed full-stack system with PDF generation and interactive scoring dashboard</li>
+          </ul>
+        </div>
+        <div class="exp-item">
+          <div class="exp-meta">
+            <div class="exp-title">AI Auto Code Fixer (VS Code Extension)</div>
+            <div class="exp-date">Sep 2025</div>
+          </div>
+          <div class="exp-role">Personal AI Project</div>
+          <ul class="exp-list">
+            <li>Built extension integrating AI model for real-time code review and debugging</li>
+            <li>Reduced debugging time with inline suggestions and quick-fix options</li>
+          </ul>
+        </div>
+        <div class="exp-item">
+          <div class="exp-meta">
+            <div class="exp-title">Full-Stack Food Ordering Platform</div>
+            <div class="exp-date">Apr 2024</div>
+          </div>
+          <div class="exp-role">MERN Stack</div>
+          <ul class="exp-list">
+            <li>JWT authentication, REST APIs, MongoDB, cart & order tracking system</li>
+          </ul>
+        </div>
+        <div class="exp-item">
+          <div class="exp-meta">
+            <div class="exp-title">Started B.E. CSE at Konkan Gyanpeeth</div>
+            <div class="exp-date">Aug 2023</div>
+          </div>
+          <div class="exp-role">Mumbai University · Karjat</div>
+          <ul class="exp-list">
+            <li>Began computer science journey with focus on DSA, OOP, and web development</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section-wrap container">
+      <div class="fade-in">
+        <div class="section-eyebrow">Academic</div>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="edu-card fade-in">
+        <div style="position:relative; z-index:1;">
+          <div class="edu-degree">Bachelor of Engineering — Computer Science & Engineering</div>
+          <div class="edu-school">Konkan Gyanpeeth College<br>of Engineering</div>
+          <div class="edu-detail">
+            Mumbai University &nbsp;·&nbsp; Karjat, India &nbsp;·&nbsp; Aug 2023 – June 2027<br>
+            Coursework: DSA · OOP · DBMS · Operating Systems · AI/ML
+          </div>
+        </div>
+        <div class="edu-badge" style="position:relative; z-index:1;">
+          <span class="edu-badge-num">7.0</span>
+          <span class="edu-badge-text">CGPA / 10</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-wrap container">
+      <div class="fade-in">
+        <div class="section-eyebrow">Get In Touch</div>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="contact-layout">
+        <div class="fade-in">
+          <p class="contact-intro">Open to internships, freelance work, and interesting conversations.</p>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <span class="contact-text">rohit1856u@gmail.com</span>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <span class="contact-text">+91 97663 09051</span>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="fas fa-map-pin"></i></div>
+            <span class="contact-text">Mumbai, India</span>
+          </div>
+          <div class="social-row">
+            <a href="https://github.com/Rohit1856" class="social-btn" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="http://www.linkedin.com/in/rohit-ushkoyal-456122356" class="social-btn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://leetcode.com/u/rohitushkoyal/" class="social-btn" target="_blank"><i class="fas fa-code"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-wrap fade-in" style="transition-delay:0.15s">
+          <form id="contactForm">
+            <div class="form-group"><input type="text" placeholder="Your name" id="name" required></div>
+            <div class="form-group"><input type="email" placeholder="Email address" id="email" required></div>
+            <div class="form-group"><input type="text" placeholder="Subject" id="subject"></div>
+            <div class="form-group"><textarea rows="4" placeholder="Your message" id="message" required></textarea></div>
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+          <div id="formSuccess" class="form-success"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">Rohit Ushkoyal</div>
+        <div class="footer-copy">© 2025 · Full Stack & AI Builder · All rights reserved</div>
       </div>
     </div>
+  </footer>
 
-  </div>
-</section>
+  <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
 
-<!-- PROJECTS -->
-<section id="projects" class="section-wrap container">
-  <h2 class="section-title">Projects</h2>
-
-  <div class="project-grid">
-
-    <div class="project-card featured">
-      <h3>AI Resume Analyzer</h3>
-      <p>AI system to analyze ATS score & generate improvements.</p>
-      <a href="https://ai-resume-frontend-afe7.vercel.app/" target="_blank" rel="noopener">
-        Live Demo
-      </a>
-    </div>
-
-    <div class="project-card">
-      <h3>AI Code Fixer</h3>
-      <p>VS Code extension for real-time debugging.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section-wrap container">
-  <h2 class="section-title">Contact</h2>
-
-  <form id="contactForm">
-    <input type="text" placeholder="Your name" required>
-    <input type="email" placeholder="Email" required>
-    <textarea placeholder="Message" required></textarea>
-    <button type="submit">Send</button>
-  </form>
-
-</section>
-
-</main>
-
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    © 2026 Rohit Ushkoyal · All rights reserved
-  </div>
-</footer>
-
-<!-- JS -->
-<script src="script.js"></script>
+ 
 
 </body>
+
+<script src="script.js"></script>
 </html>
