@@ -1,5 +1,4 @@
-
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+ *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
       --forest:  #1F2F2B;
@@ -652,3 +651,4 @@
       .edu-card { padding: 2rem; }
       .edu-badge { padding: 1rem 1.5rem; }
     }
+ 
